@@ -3,9 +3,9 @@ project(imgui CXX)
 
 set(CMAKE_DEBUG_POSTFIX d)
 
-set(CMAKE_CXX_STANDARD 11)
 
 if(APPLE)
+    set(CMAKE_CXX_STANDARD 11)
     enable_language(OBJCXX)
 endif()
 
@@ -28,6 +28,8 @@ target_sources(
         ${CMAKE_CURRENT_SOURCE_DIR}/imgui_widgets.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/misc/cpp/imgui_stdlib.cpp
 )
+
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 11)
 
 if(IMGUI_BUILD_ALLEGRO5_BINDING)
     find_path(ALLEGRO5_INCLUDE_DIRS allegro5/allegro.h)
