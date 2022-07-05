@@ -1,10 +1,10 @@
 {
   "name": "imgui",
   "version": "1.88",
+  "port-version": 1,
   "description": "Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies.",
   "homepage": "https://github.com/ocornut/imgui",
   "license": "MIT",
-  "port-version": 1,
   "dependencies": [
     {
       "name": "vcpkg-cmake",
